@@ -1,0 +1,65 @@
+* {
+    margin:0;
+
+}
+body{
+    background-color: rgb(127, 150, 255);
+}
+
+h1{
+    position:absolute;
+    color:white;
+    font-size:4rem;
+}
+.wrapper {
+    height:100vh;
+    overflow-Y:auto;
+    overflow-X:hidden;
+    perspective: 10px;
+}
+
+header {
+position:relative;
+display:flex;
+justify-content: center;
+align-items:center;
+height:100%;
+transform-style: preserve-3d;
+z-index:-1;
+}
+
+img {
+position:absolute;
+height:100%;
+width:100%;
+object-fit: cover;
+z-index:-1;
+}
+
+img[src *= sun] {
+    transform: translateZ(-15px) scale(2.5);
+}
+img[src *= mt3] {
+    transform: translateZ(-10px) scale(2);
+}
+img[src *= mt2] {
+    transform: translateZ(-4px) scale(1.4);
+}
+img[src *= mt1] {
+    transform: translateZ(-2px) scale(1.2);
+}
+img[src *= frt] {
+    transform: translateZ(-2px) scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    background-color:black;
+    opacity:0.2;
+    height:100%;
+    width:100%;
+}
+p {
+    background:#aaa;
+    font-size:2rem;
+}
